@@ -8,10 +8,11 @@ int main(void) {
      {
         scanf("%f %f %f", &nota0, &nota1, &nota2);
         media = (nota0 + nota1 + nota2) / 3;
-        //printf("Média Quadrilha %d = %.2f\n", i+1, media);
         if(media > resu) {
             resu = media;
             vencedor = i + 1;
+        } else if (media == resu) {
+            vencedor = 2;
         }
      }
      printf("Vencedor:%d\n", vencedor);
